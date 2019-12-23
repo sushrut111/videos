@@ -1,0 +1,12 @@
+
+{% extends 'player/layout.html' %}
+
+{% block mainblock %}
+<title>{{title}}</title>
+<centre>
+    <video class="afterglow" id="myvideo" width="1280" height="720" preload="auto">
+        <source type="video/mp4" src="{{url}}" />
+    </video>
+    <a href="{{next}}" class="button">Next episode</a>
+</centre>
+{%endblock%}

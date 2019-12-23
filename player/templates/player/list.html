@@ -1,0 +1,7 @@
+{% extends 'player/layout.html' %}
+
+{% block mainblock %}
+{% for links in series %}
+<a class="button is-primary" href='{{links.link}}'>{{links.name}}</a>&nbsp;&nbsp;<br>
+{%endfor%}
+{%endblock%}
